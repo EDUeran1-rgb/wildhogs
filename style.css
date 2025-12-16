@@ -27,12 +27,15 @@ main {
 }
 #loggaarean{
     position:absolute;
+    margin-top: -20px;
 }
 
 #loggatxt{
+    width:100%;
+    display:flex;
     position:absolute;
-    
-    margin-top: 50px;
+    justify-content: center;
+    margin-top: -50px;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px #000000;
 }

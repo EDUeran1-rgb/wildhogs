@@ -15,6 +15,7 @@ header{
     justify-content: center;
     align-items: center;
     height: 222px;
+    border-bottom: solid black 2px;
 }
 #stortxt{
     
