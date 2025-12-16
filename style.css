@@ -17,12 +17,13 @@ main {
     height: calc(100vh - 247px);
     overflow-x: scroll;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: #D9D9D9;
     white-space: nowrap;
     flex-shrink: 0;
-    
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
 #loggaarean{
@@ -54,24 +55,17 @@ nav a{
     margin-right:5px;
 }
 #item1{
+    margin-left:10px;
+    margin-right:10px;
+    height:400px;
+    display: flex;
+    width:300px;
+    background-color: rgb(143, 143, 143);
+    flex-shrink: 0;
+    border-radius: 10px;
+    border:solid black 2px;
+}
 
-    /*margin-left:1860px;*/ /*vet inte varför jag behöver göra detta btw jag försökte på main med padding men det gjorde så att storleken på main blev för mycket*/
-    margin-right:20px;
-    height:400px;
-    display: flex;
-    width:300px;
-    background-color: rgb(143, 143, 143);
-    flex-shrink: 0;
-    
-}
-#item2{
-    margin-right:20px;
-    height:400px;
-    display: flex;
-    width:300px;
-    background-color: rgb(143, 143, 143);
-    flex-shrink: 0;
-}
 footer {
     display: flex;
     justify-content: center;
