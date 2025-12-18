@@ -15,23 +15,29 @@
         </nav>
     </header>
     <main>
-        <div id="item">1</div>
-        <div id="item">2</div>
-        <div id="item">3</div>
-        <div id="item">4</div>
-        <div id="item">5</div>
-        <div id="item">6</div>
-        <div id="item">7</div>
-        <div id="item">8</div>
-        <div id="item">9</div>
-        <div id="item">10</div>
-        <div id="item">11</div>
+        <div id="item" onmouseover="showCursorText('produkt1')" onmouseleave="hideCursorText()" onmouseout="hideCursorText()" onmouseenter="showCursorText('produkt1')">produkt1</div>
+        <div id="item" onmouseover="showCursorText('produkt2')" onmouseleave="hideCursorText()" onmouseout="hideCursorText()" onmouseenter="showCursorText('produkt2')">produkt2</div>
+        <div id="item" onmouseover="showCursorText('produkt3')" onmouseleave="hideCursorText()" onmouseout="hideCursorText()" onmouseenter="showCursorText('produkt3')">produkt3</div>
+        <div id="item" onmouseover="showCursorText('produkt4')" onmouseleave="hideCursorText()" onmouseout="hideCursorText()" onmouseenter="showCursorText('produkt4')">produkt4</div>
+        <div id="item" onmouseover="showCursorText('produkt5')" onmouseleave="hideCursorText()" onmouseout="hideCursorText()" onmouseenter="showCursorText('produkt5')">produkt5</div>
+        <div id="item" onmouseover="showCursorText('produkt6')" onmouseleave="hideCursorText()" onmouseout="hideCursorText()" onmouseenter="showCursorText('produkt6')">produkt6</div>
+        <div id="item" onmouseover="showCursorText('produkt7')" onmouseleave="hideCursorText()" onmouseout="hideCursorText()" onmouseenter="showCursorText('produkt7')">produkt7</div>
+        <div id="item" onmouseover="showCursorText('produkt8')" onmouseleave="hideCursorText()" onmouseout="hideCursorText()" onmouseenter="showCursorText('produkt8')">produkt8</div>
+        <div id="item" onmouseover="showCursorText('produkt9')" onmouseleave="hideCursorText()" onmouseout="hideCursorText()" onmouseenter="showCursorText('produkt9')">produkt9</div>
+        <div id="item" onmouseover="showCursorText('produkt10')" onmouseleave="hideCursorText()" onmouseout="hideCursorText()" onmouseenter="showCursorText('produkt10')">produkt10</div>
+        <div id="item" onmouseover="showCursorText('produkt11')" onmouseleave="hideCursorText()" onmouseout="hideCursorText()" onmouseenter="showCursorText('produkt11')">produkt11</div>
     </main>
     <div class="cursor-text" id="cursorText">TEST</div>
     <script>
         const cursorText = document.getElementById('cursorText');
 
-        
+        function showCursorText(x) {
+            cursorText.style.display = 'block';
+            cursorText.textContent = x;
+        }
+        function hideCursorText() {
+            cursorText.style.display = 'none';
+        }
         document.addEventListener('mousemove', (e) => {
             cursorText.style.left = e.clientX + 'px';
             cursorText.style.top = e.clientY + 'px';
